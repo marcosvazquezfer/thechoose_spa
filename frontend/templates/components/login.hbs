@@ -1,0 +1,54 @@
+
+<article class="col-xs-12 col-sm-12">
+
+  <!--Current page: {{routerModel.currentPage}}-->
+  {{#if isLogged}}
+
+    {{i18n 'Your are logged. Logout first'}}
+    
+  {{else}}
+
+    <div class="mod1">
+
+      <div>
+        <label for="email">{{i18n 'Email'}}</label> 
+        <input type="text" id="email"> <br>
+      </div>
+
+      <div>
+        <label for="password">{{i18n 'Password'}}</label>
+        <input type="password" id="password"><br>
+      </div>
+
+      <input type="submit" class="btn btn-default" id='loginbutton' value="{{i18n 'Login'}}">
+      
+      <div id="nh">
+        {{i18n 'New here?'}}
+        <a href="#login" id='registerlink'><input type="image" src="./././css/img/register.png" alt="register"></a>
+      </div>
+
+    </div>
+    {{#i18n}}{{loginError}}{{/i18n}}
+    
+    
+    {{#if registerMode}}
+
+      <h2>{{i18n 'New user'}}</h2>
+
+      <div class="mod1" id="registration-form">
+
+        {{i18n 'Email'}}: <input type="text" id="registeremail">
+        {{#i18n}}{{registerErrors.email}}{{/i18n}}<br>
+        {{i18n 'Complete Name'}}: <input type="text" id="registercompleteName">
+        {{#i18n}}{{registerErrors.completeName}}{{/i18n}}<br>
+        {{i18n 'Password'}}: <input type="password" id="registerpassword">
+        {{#i18n}}{{registerErrors.passwd}}{{/i18n}}<br>
+
+        <input type="submit" class="btn btn-default" id='registerbutton' value="{{i18n 'REGISTER'}}">
+
+      </div>
+    {{/if}}
+
+  {{/if}}
+
+</article>

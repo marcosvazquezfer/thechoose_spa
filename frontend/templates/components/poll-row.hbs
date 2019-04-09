@@ -1,0 +1,18 @@
+<tr key="{{id}}">
+
+  <td scope="row"><a href="#view-poll?id={{id}}">{{title}}</a>
+  
+  <td>
+
+    {{#if_eq user.currentUser author_email}}
+
+      <button class="delete-poll-button"><img src="././css/img/trash.png" alt="remove" item="{{id}}"></button>
+      <a href="#remove-users?id={{id}}"><img src="././css/img/deleteUserALL.png" alt="remove" item="{{id}}"></a>
+
+    {{/if_eq}}
+
+    <button class="unsubscribe-poll-button"><img src="././css/img/deleteUser.png" alt="unsubscribe" item="{{id}}"></button>
+
+  </td>
+  
+</tr>

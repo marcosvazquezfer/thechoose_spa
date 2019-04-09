@@ -1,0 +1,65 @@
+<div>
+
+  <article class="col-xs-12 col-sm-12">
+
+    <h1>{{selectedPoll.title}}</h1>
+
+    <table class="mod1">
+
+      <thead>
+
+        <tr class="first">
+
+          <th scope="col" colspan="2">
+
+            <input class="btn btn-default" type="submit" id="remove-user-button" value="{{ i18n 'REMOVE' }}">
+
+          </th>
+
+        </tr>
+
+        <tr class="second">
+
+          <th scope="col" id="f1">{{i18n 'Name'}}</th>
+          <th scope="col" id="f2">{{i18n 'Remove?'}}</th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        {{#each selectedPoll.participants}}
+        
+          <tr>
+            
+            <th scope="row">
+
+              {{completeName}}
+
+            </th>
+
+            <td>
+              
+              <input name="checkbox[]" id="checkbox{{@index}}" type="checkbox" value="{{participantId}}"/>
+              <label for="checkbox{{@index}}"></label>
+
+            </td>
+
+          </tr>
+
+        {{/each}}
+
+      </tbody>
+
+    </table>
+
+    <div class="btn-group col-lg-2 col-md-3 col-sm-3 col-xs-2">
+
+      <a href="#polls"><input type="image" src="././css/img/back2.png"></a>
+
+    </div><br>
+
+  </article>
+
+</div>

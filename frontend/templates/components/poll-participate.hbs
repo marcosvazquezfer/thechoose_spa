@@ -1,0 +1,70 @@
+<div>
+
+  <article class="col-xs-12 col-sm-12">
+
+    <h1 class="bl">{{selectedPoll.title}}</h1> <br>
+
+    <form id="ep" action="">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th scope="col" colspan="3">
+
+                        <input class="btn btn-default" type="submit" id="submitbutton" value="{{ i18n 'SEND' }}">
+
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+                
+                <!-- $cont == 0 -->
+                {{#each selectedPoll.holes}}
+
+                    <tr>
+
+                        <th scope="col">
+                            {{date}}
+                        </th>
+
+                        <th scope="col">
+                            {{timeStart}} - {{timeFinish}}
+                        </th>
+
+                        <!-- Asignar a variable $check, checkbox+cont -->
+                        <!-- si timeStart != null -->
+
+                            <td>
+
+                                <input name="checkbox[]" id="checkbox{{@index}}" type="checkbox" value="{{date}}.{{timeStart}}"/>
+                                    <label for="checkbox{{@index}}"></label>
+
+                            </td>
+
+                        <!-- FIN if -->
+                        <!-- cont++ -->
+                    </tr>
+
+                {{/each}}
+
+            </tbody>
+
+        </table>
+
+    </form>
+
+    <div class="btn-group col-lg-2 col-md-3 col-sm-3 col-xs-2">
+
+        <a href="#view-poll?id={{selectedPoll.pollId}}"><input type="image" src="././css/img/cancel.png"></a>
+
+    </div><br>
+
+  </article>
+
+</div>

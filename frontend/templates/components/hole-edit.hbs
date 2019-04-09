@@ -1,0 +1,32 @@
+<div>
+
+    <article class="col-xs-12 col-sm-12">
+
+        <div id="hd">
+            
+            <h1 class="bl">{{i18n 'Edit Hole' }}</h1><br>
+            
+            {{i18n 'Date'}}:<input type="date" id="date" value="{{selectedHole.date}}">{{#i18n}}{{errors.date}}{{/i18n}}<br>
+
+            {{i18n 'Time Start'}}:<input type="time" id="timeStart" value="{{selectedHole.timeStart}}">
+            {{#i18n}}{{errors.timeStart}}{{/i18n}} <br>
+            
+            {{i18n 'Time Finish'}}:<input type="time" id="timeFinish" value="{{selectedHole.timeFinish}}">
+            {{#i18n}}{{errors.timeFinish}}{{/i18n}} <br>
+
+            <input type="hidden" id="oldDate" value="{{selectedHole.date}}">
+            <input type="hidden" id="oldTimeStart" value="{{selectedHole.timeStart}}">
+                
+            <input type="button" class="btn btn-default" id="editbutton" value="{{i18n 'EDIT'}}"></input> <br>
+
+        </div>
+
+        <div class="btn-group col-lg-2 col-md-3 col-sm-3 col-xs-2">
+
+            <a href="#edit-poll?id={{selectedPoll.pollId}}"><input type="image" src="././css/img/cancel.png"></a>
+
+        </div><br>
+
+    </article>
+
+</div>

@@ -1,0 +1,214 @@
+<div>
+
+  <article class="col-xs-12 col-sm-12">
+
+    <h1>{{selectedPoll.title}}</h1>
+    <!--{{i18n 'by'}} {{selectedPoll.author_email}}-->
+
+    <h4>{{selectedPoll.link}}</h4> <br>
+
+    <!--<div id="holes">
+      <h3>{{i18n 'Holes'}}</h3>
+      {{#each selectedPoll.holes}}
+        <p>{{date}} commented</p>
+        <p>
+          {{content}}
+        </p>
+        <hr>
+      {{/each}}
+    </div>-->
+
+    <table class="hidden-xs hidden-sm">
+
+      <thead>
+
+        <tr class="first">
+
+          <th scope="col" rowspan="2">
+
+            <a href="#participate-poll?id={{selectedPoll.pollId}}"><input type="image" id="participate" src="././css/img/participate.png"></a>
+            <a href="#editParticipation-poll?id={{selectedPoll.pollId}}"><input type="image" id="edit" src="././css/img/edit_p.png"></a>
+
+            {{#if_eq selectedPoll.author_email user.currentUser}}
+
+              <a href="#edit-poll?id={{selectedPoll.pollId}}"><input type="image" src="././css/img/modify.png"></a>
+
+            {{/if_eq}}
+
+          </th>
+
+          {{#each selectedPoll.holes}}
+
+            <th>
+
+              {{date}}
+
+            </th>
+
+          {{/each}}
+
+        </tr>
+
+        <tr class="second">
+
+          {{#each selectedPoll.holes}}
+
+          <th>
+
+            {{timeStart}} - {{timeFinish}}
+
+          </th>
+
+          {{/each}}
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        {{#each selectedPoll.participants}}
+        
+        <tr>
+          
+          <th scope="row">
+
+            {{completeName}}
+
+          </th>
+
+          {{#each ../selectedPoll.selections}}
+
+            {{#if_eq ../participantId email}}
+
+              {{#if_eq selection 0}}
+
+                <td></td>
+
+              {{/if_eq}}
+
+              {{#if_eq selection 1}}
+
+                <td>
+
+                  <input type="image" value="1" src="././css/img/smile.png">
+
+                </td>
+
+              {{/if_eq}}
+
+            {{/if_eq}}
+
+          {{/each}}
+
+        </tr>
+
+        {{/each}}
+
+      </tbody>
+
+    </table>
+
+    <table class="hidden-lg hidden-md">
+
+      <thead>
+
+        <tr class="first" >
+
+          <th scope="col" colspan="3" id="peq">
+
+            <a href="#participate-poll?id={{selectedPoll.pollId}}"><input type="image" id="participate" src="././css/img/participate.png"></a>
+            <a href="#editParticipation-poll?id={{selectedPoll.pollId}}"><input type="image" id="edit" src="././css/img/edit_p.png"></a>
+
+            {{#if_eq selectedPoll.author_email user.currentUser}}
+
+              <a href="#edit-poll?id={{selectedPoll.pollId}}"><input type="image" src="././css/img/modify.png"></a>
+
+            {{/if_eq}}
+
+          </th>
+
+        </tr>
+
+        <tr class="second">
+
+          <th scope="col" colspan="3">
+
+            {{i18n 'Participants' }}: {{selectedPoll.participants.length}}
+
+          </th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        {{#each selectedPoll.holes}}
+
+          <tr>
+
+            <td scope="col">
+
+              {{date}}
+
+            </td>
+
+            <td scope="col">
+
+              {{timeStart}} - {{timeFinish}}
+
+            </td>
+
+            <td scope="col">
+
+              <!-- numero de participantes -->
+              <!--{{var 'participants' ../selectedPoll.participants.length}}-->
+              
+              <!-- contador a 0 -->
+              <!--{{var 'cont' 0}}
+              {{var 'index' @index}}-->
+
+              {{#each ../selectedPoll.participants}}
+
+                {{#each ../../selectedPoll.selections}}
+
+                  {{#if_eq ../participantId email}}
+
+                    {{#if_eq ../../date date}}
+
+                      {{#if_eq ../../timeStart timeStart}}
+
+                        {{#if_eq selection 1}}
+                          <input type="image" value="1" src="././css/img/smile.png">
+                        {{/if_eq}}
+
+                      {{/if_eq}}
+
+                    {{/if_eq}}
+
+                  {{/if_eq}}
+
+                {{/each}}
+
+              {{/each}}
+
+            </td>
+
+          </tr>
+
+        {{/each}}
+
+      </tbody>
+
+    </table>
+
+    <div class="btn-group col-lg-2 col-md-3 col-sm-3 col-xs-2">
+
+      <a href="#polls"><input type="image" src="././css/img/back2.png"></a>
+
+    </div><br>
+
+  </article>
+
+</div>

@@ -1,0 +1,70 @@
+<div>
+  <article class="col-xs-12 col-sm-12">
+
+    <div class="mod1">
+
+      <h1 class="bl">{{i18n 'Modify Poll' }}</h1>
+
+      {{i18n 'Title'}}:<input type="text" id="title" value="{{selectedPoll.title}}">
+      {{#i18n}}{{errors.title}}{{/i18n}}<br>
+      {{i18n 'Link'}}:<input type="text" id="link" value="{{selectedPoll.link}}" readonly>
+      {{#i18n}}{{errors.link}}{{/i18n}}<br>
+      {{i18n 'Anonymous Participation?'}} <br><br>
+      <input name="checkbox" id="checkbox" type="checkbox"/>
+      <label for="checkbox"></label>
+      {{#i18n}}{{errors.anonymous}}{{/i18n}}<br>
+      <input type="button" class="btn btn-default" id="savebutton" value="{{i18n 'EDIT'}}"></input> <br>
+
+    </div>
+
+    <div class="btn-group col-lg-2 col-md-3 col-sm-3 col-xs-2">
+
+      <a href="#add-hole?id={{selectedPoll.pollId}}"><input type="image" src="././css/img/addColumn.png"></a>
+      <a href="#choose-hole?id={{selectedPoll.pollId}}"><input type="image" src="././css/img/editColumn.png"></a>
+      <a href="#delete-hole?id={{selectedPoll.pollId}}"><input type="image" src="././css/img/deleteColumn.png"></a>
+
+    </div>
+
+    <table>
+
+      <thead>
+
+        <tr class="first">
+          
+          {{#each selectedPoll.holes}}
+            
+            <!--<th scope="col" colspan="2">-->
+            <th scope="col">
+              {{date}}
+            </th>
+
+          {{/each}}
+
+        </tr>
+
+        <tr class="second">
+
+          {{#each selectedPoll.holes}}
+
+            <th scope="col">
+              {{timeStart}} - {{timeFinish}}
+            </th>
+
+          {{/each}}
+
+        </tr>
+
+      </thead>
+
+    </table>
+
+    <div class="btn-group col-lg-2 col-md-3 col-sm-3 col-xs-2">
+
+      <a href="#view-poll?id={{selectedPoll.pollId}}"><input type="image" src="././css/img/ok.png"></a>
+      <a href="#polls"><input type="image" src="././css/img/cancel.png"></a>
+
+    </div><br>
+
+  </article>
+  
+</div>

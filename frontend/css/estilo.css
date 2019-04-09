@@ -1,0 +1,687 @@
+body{
+
+	background-color: #FCBD00;
+	overflow-x: hidden;
+	text-align: center;
+	font-family: 'Fredericka the Great', cursive;
+
+	font-size: 13pt;
+
+	color: white;
+}
+
+header{
+
+	background-image: url("img/fondo.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 80px;
+	display: flex;
+	flex-flow: row-wrap;
+	align-items: center;
+	font-family: 'Monoton', cursive;
+  	color: white;
+}
+
+header input{
+
+	width: 40px;
+	height: 40px;
+}
+
+header a input{
+
+	width: 40px;
+	height: 40px;
+}
+
+.navbar-custom {
+
+	text-align: center;
+    background-image: url("img/fondo.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    color:#000;
+	border-radius:0;
+	width: 100% !important;
+}
+
+.navbar-custom .navbar-nav > li > a {
+
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+
+    text-decoration: none;
+    background-color: #FCBD00F0;
+}
+
+.navbar-custom .navbar-brand {
+
+    color:#f9df5f;
+}
+
+.navbar-custom .navbar-toggle {
+
+	margin-right: 45%;
+	background-color:#FCBD00;
+	width: 45px;
+}
+
+.navbar-custom .icon-bar {
+
+    background-color:#059CC9;
+}
+
+/* for dropdowns only */
+.navbar-custom .navbar-nav .dropdown-menu  { 
+
+	margin-left: 200px;
+  	background-color: transparent;
+}
+
+.navbar-custom .navbar-nav .dropdown-menu>li>a  { 
+
+  color: #fff;
+}
+
+.navbar-custom .navbar-nav .dropdown-menu>li>a:hover,.navbar-custom .navbar-nav .dropdown-menu>li>a:focus  { 
+  
+  background-color: #FCBD00D0;
+  color: #fff;
+}
+
+h1.bl{
+
+	color: #059CC9;
+}
+
+p.blu{
+
+	color: #059CC9;
+}
+
+div.row nav button{
+
+	background: #FB4B94;
+	color: white;
+	width: 100px;
+	height: 40px;
+	margin-top: -10px;
+}
+
+article{
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+article p{
+
+	margin-top: 30px;
+	font-size: 1.2em;
+}
+
+article h2{
+
+	color: #fff;
+}
+
+div.row article form button{
+
+	background: #FB4B94;
+	color: white;
+	width: 100px;
+	height: 40px;
+}
+
+div.row article form div.form-group{
+
+	display: inline-flex;
+	align-items: baseline;
+}
+
+div.row article form div.form-group span{
+
+	color: #fff;
+}
+
+
+div.mod1 {
+	width: 450px;
+	padding: 5px;
+	margin-bottom: 70px;
+	border: 5px solid #059CC9;
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div.mod1 label{
+
+	display: inline-block;
+	width: 300px;
+	color: white;
+	text-align: center;
+	vertical-align: bottom;
+	
+}
+
+div.mod1 input {
+
+	padding: 8px;
+	margin: 8px auto;
+	border: 2px solid #059CC9;
+	background-color: #059CC9;
+	border-radius: 3px;
+	color: #fff;
+}
+
+div.mod1 input.btn-default {
+
+	background: #FB4B94;
+	color: white;
+	width: 100px;
+	height: 40px;
+	border: none;
+}
+
+div.mod1 div#nh{
+
+	align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+div.mod1 div#nh a input{
+
+	width: 60px;
+	height: 60px;
+	border: none;
+	background-color: initial;
+}
+
+div.mod1 select{
+
+	color: #059CC9;
+	background-color: #fff;
+	font-size: 1.2em;
+}
+
+div.mod1 input[type=checkbox] {
+
+	display: none;
+}
+
+div.mod1 input[type=checkbox] + label {  
+
+  height: 30px;
+  width: 30px;
+  background-image: url('img/serious2.png');
+  background-size: 100%;
+  display: inline-block;
+}
+
+div.mod1 input[type=checkbox]:checked + label {
+
+	background-image: url('img/smileall.png');
+	background-size: 100%;
+}
+
+table.mod1 input[type=checkbox] {
+
+	display: none;
+}
+
+table.mod1 input[type=checkbox] + label {  
+
+  height: 40px;
+  width: 40px;
+  background-image: url('img/deleteUserGrey.png');
+  background-size: 100%;
+  display: inline-block;
+}
+
+table.mod1 input[type=checkbox]:checked + label {
+
+	background-image: url('img/deleteUser.png');
+	background-size: 100%;
+}
+
+table.mod1 input.btn-default {
+
+	background: #FB4B94;
+	color: white;
+	width: 100px;
+	height: 40px;
+	border: none;
+}
+
+div#hd {
+	width: 450px;
+	padding: 5px;
+	text-align: center;
+	margin-bottom: 70px;
+	border: 5px solid #059CC9;
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div#hd label{
+
+	display: inline-block;
+	width: 300px;
+	color: white;
+	text-align: center;
+	vertical-align: bottom;
+	
+}
+
+div#hd input {
+
+	padding: 8px;
+	margin: 8px auto;
+	border: 2px solid #059CC9;
+	background-color: #059CC9;
+	border-radius: 3px;
+	color: #fff;
+}
+
+div#hd input.btn-default {
+
+	background: #FB4B94;
+	color: white;
+	width: 100px;
+	height: 40px;
+	border: none;
+}
+
+div#rlb{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div#lb{
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.btn-default {
+
+	background: #FB4B94;
+	color: white;
+	width: 100px;
+	height: 40px;
+	border: none;
+}
+
+form#ep table{
+
+	width: 400px;
+}
+
+form#ep table thead tr{
+
+	height: 75px;
+}
+
+form#ep table thead tr th input.btn-default{
+
+	background: #FB4B94;
+	color: white;
+	width: 100px;
+	height: 40px;
+}
+
+table#vmp{
+
+	width: 400px;
+}
+
+table#vmp thead tr th#f1{
+
+	height: 60px;
+}
+
+table#vmp thead tr th#f2{
+
+	width: 20px;
+}
+
+table#vmp a img{
+
+	margin-top: 5px;
+	height: 44px;
+	width: 44px;
+}
+
+button.delete-poll-button{
+
+	background: white;
+	border: none;
+}
+
+button.delete-poll-button img{
+
+	margin-top: 5px;
+	height: 44px;
+	width: 44px;
+}
+
+button.unsubscribe-poll-button{
+
+	background: white;
+	border: none;
+}
+
+button.unsubscribe-poll-button img{
+
+	margin-top: 5px;
+	height: 44px;
+	width: 44px;
+}
+
+
+table{
+
+	width: 70%;
+	height: 250px;
+	margin-bottom: 30px;
+}
+
+table thead{
+
+	background-color: #059CC9;
+	color: white;
+}
+
+table thead th a{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+table thead th a input{
+
+	width: 35px;
+	height: 35px;
+}
+
+table thead th a input#participate{
+
+	margin-bottom: 10px !important;
+}
+
+table thead th a input#edit{
+
+	margin-bottom: 10px !important;
+}
+
+table thead tr th{
+
+	border: 1px solid #FCBD00;
+	text-align: center;
+	padding: 10px;
+}
+
+table tbody{
+
+	background-color: white;
+}
+
+table tbody tr th{
+
+	border-top: 1px solid #FCBD00;
+	border-right: 1px solid #FCBD00;
+	text-align: center;
+	color: #059CC9;
+}
+
+table tbody tr td{
+
+	border-top: 1px solid #FCBD00;
+	border-left: 1px solid #FCBD00;
+	text-align: center;
+	padding-top: 5px;
+}
+
+/* Para pruebas */
+table tbody tr td{
+
+	color: #059CC9;
+}
+
+table tbody tr td input{
+
+	width: 30px;
+	height: 30px;
+}
+
+input[type=checkbox] {
+
+  	display: none;
+}
+
+input[type=checkbox] + label {  
+
+	height: 30px;
+	width: 30px;
+	background-image: url('img/serious.png');
+	background-size: 100%;
+	display: inline-block;
+}
+
+input[type=checkbox]:checked + label {
+
+  	background-image: url('img/smile.png');
+  	background-size: 100%;
+}
+
+a button.btn-default{
+
+	background: #FB4B94;
+	color: white;
+	width: 100px;
+	height: 40px;
+}
+
+footer{
+
+	font-family: 'Monoton', cursive;
+  	color: white;
+
+  	background-image: url("img/fondo.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	clear: both;
+	
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+   	bottom:0px;
+   	height: 50px;
+}
+
+footer p {
+
+	text-align: center;
+	padding-top: 15px;
+}
+
+@keyframes backgroundflash {		
+		75% { opacity:1.0}
+		100% {opacity:0.0; display:none}
+}
+
+#flash {
+	background-color:green;
+	animation: backgroundflash 5s forwards; 
+}
+
+/* Dispositivos pequeños (tablets, anchura mayor o igual a 768px) */
+@media (min-width: 768px) {
+
+	header h1{
+
+		padding-left: 6% !important;
+	}
+
+	header a input{
+
+		margin-top: 10px;
+		margin-left: 30px;
+	}
+
+	.navbar-custom .navbar-nav .dropdown-menu  {
+
+		margin-left: 200px;
+	  	background-color: #059CC9;
+	}
+
+	.navbar-nav.navbar-right.index {
+
+	    position: absolute;
+	    right: 37%;
+	    transform: none;
+	}
+
+	.navbar-nav.navbar-right.view {
+
+	    position: absolute;
+	    right: 33%;
+	    transform: none;
+	}
+
+	.navbar-nav.navbar-right.participate {
+
+	    position: absolute;
+	    right: 33%;
+	    transform: none;
+	}
+
+	table{
+
+		width: 60%;
+		height: 250px;
+	}
+}
+
+/* Dispositivos medianos (ordenadores, anchura mayor o igual a 992px)
+*/
+@media (min-width: 992px) {
+
+	header h1{
+
+		padding-right: 4% !important;
+	}
+
+	.navbar-custom .navbar-nav .dropdown-menu  { 
+
+		margin-left: 200px;
+	  	background-color: #059CC9;
+	}
+
+	.navbar-nav.navbar-right.index {
+
+	    position: absolute;
+	    right: 41%;
+	    transform: none;
+	}
+
+	.navbar-nav.navbar-right.view {
+
+	    position: absolute;
+	    right: 36%;
+	    transform: none;
+	}
+
+	.navbar-nav.navbar-right.participate {
+
+	    position: absolute;
+	    right: 36%;
+	    transform: none;
+	}
+	
+	table{
+
+		width: 50%;
+		height: 250px;
+	}
+}
+
+/* Dispositivos grandes (ordenadores, anchura mayor o igual a 1200px)
+*/
+@media (min-width: 1200px) {
+
+	.alineacion{
+
+		object-position: center;
+	}
+
+	header h1{
+
+		padding-left: 10% !important;
+	}
+
+	.navbar-custom .navbar-nav .dropdown-menu  { 
+		
+		margin-left: 200px;
+	  	background-color: #059CC9;
+	}
+
+	.navbar-nav.navbar-right.index {
+
+	    position: absolute;
+	    right: 42%;
+	    transform: none;
+	}
+
+	.navbar-nav.navbar-right.view {
+
+	    position: absolute;
+	    right: 38%;
+	    transform: none;
+	}
+
+	.navbar-nav.navbar-right.participate {
+
+	    position: absolute;
+	    right: 38%;
+	    transform: none;
+	}
+
+	table{
+
+		width: 50%;
+		height: 250px;
+	}
+}

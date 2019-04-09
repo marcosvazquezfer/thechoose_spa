@@ -1,0 +1,27 @@
+<div>
+
+    <article class="col-xs-12 col-sm-12">
+
+        <div class="mod1">
+
+            <h1 class="bl">{{i18n 'Choose Hole' }}</h1><br>
+            
+            <select id="hole">
+
+                <option value="">{{i18n 'Choose one hole to edit'}}</option>
+
+                {{#each holes}}
+
+                    <option value="{{date}}.{{timeStart}}.{{timeFinish}}">{{date}}--{{timeStart}}--{{timeFinish}}</option>
+
+                {{/each}}
+
+            </select><br>
+
+            <input type="button" class="btn btn-default" id="choosebutton" value="{{i18n 'CHOOSE'}}"></input> <br>
+        
+        </div>
+
+    </article>
+
+</div>

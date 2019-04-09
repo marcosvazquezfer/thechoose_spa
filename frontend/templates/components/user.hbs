@@ -1,0 +1,25 @@
+<div class="btn-group col-lg-2 col-md-3 col-sm-3 col-xs-2">
+
+  {{#if isLogged}}
+
+  <div id="rlb">
+
+    {{i18n 'Hello!'}}
+
+    <div id="lb">
+
+      <input type="image" id='logoutbutton' src="././css/img/logout.png" alt="logout"></input>
+      <input type="image" id='remove-user-button' src="././css/img/removeUser.png" alt="remove User"></input>
+
+    </div>
+
+  </div>
+
+  {{else}}
+
+    <!--<a href='#login'>{{i18n 'Login'}}</a>-->
+    <a href='#login'><input type="image" src="././css/img/login.png" alt="login"></a>
+
+  {{/if}}
+  
+</div>
