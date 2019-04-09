@@ -10,5 +10,4 @@ El frontend está implementado mediante JavaScript y AJAX, que se comunica con e
 
 ## Autores ✒️
 
-Marcos Vázquez Fernández
-Lara Souto Alonso 
+Marcos Vázquez Fernández y Lara Souto Alonso 
